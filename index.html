@@ -85,13 +85,10 @@
             <h2 class="text-center">Video Portfolio</h2>
             <div class="portfolio-grid">
                 <!-- 8 Portfolio Items -->
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-video-id="QnABr-uNhbY">
                     <div class="video-placeholder">
-                        <iframe src="https://www.youtube.com/embed/QnABr-uNhbY" title="Raya & Rasna UGC" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            style="width:100%;height:100%;position:absolute;top:0;left:0;border-radius:8px;">
-                        </iframe>
+                        <img src="https://img.youtube.com/vi/QnABr-uNhbY/hqdefault.jpg" alt="Video thumbnail">
+                        <div class="play-icon">▶</div>
                     </div>
                     <p class="caption">"The stroller hack every mom needs..."</p>
                 </div>
@@ -206,6 +203,19 @@
             <p>© <span id="year"></span> Raya & Rasna UGC. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Reel Modal -->
+    <div id="reelModal" class="reel-modal" role="dialog" aria-modal="true">
+        <div class="reel-modal-overlay" id="reelOverlay"></div>
+        <div class="reel-modal-content">
+            <button class="reel-close" id="reelClose" aria-label="Close video">✕</button>
+            <div class="reel-frame">
+                <iframe id="reelIframe" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
